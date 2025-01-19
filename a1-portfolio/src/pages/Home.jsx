@@ -10,11 +10,11 @@ export default function Home() {
                 <h1 className="hero-title mb-5">
                   Crafting Digital Experiences
                 </h1>
-                <p className="text-xl">
+                <p className="text-xl hero">
                   Full-stack developer specializing in building exceptional digital experiences. 
                   Currently focused on creating accessible, human-centered products.
                 </p>
-                <div className="flex hero">
+                <div className="flex hero2">
                   <a href="/contact" className="btn btn-primary bp2">
                     Get in Touch
                   </a>
@@ -74,8 +74,10 @@ export default function Home() {
                 }
               ].map((skill, index) => (
                 <div key={index} className="skill-card">
-                  <div className="skill-icon">{skill.icon}</div>
-                  <h3 className="text-primary">{skill.title}</h3>
+                    <div className="icon-title-group"> 
+                      <div className="skill-icon">{skill.icon}</div>
+                      <h3 className="text-primary">{skill.title}</h3>
+                    </div>
                   <p className="text-secondary">{skill.description}</p>
                 </div>
               ))}

@@ -206,8 +206,77 @@ const Navbar = () => {
             width: 24px;
             height: 24px;
           }
+          
 
-          @media (max-width: 768px) {
+          @media (hover: none) and (max-height: 500px) {
+          .nav-links {
+            max-height: 300px;
+            overflow-y: auto;
+          }
+        }
+
+          @media (hover: none) and (max-width: 992px) {
+            .nav-links {
+              position: fixed;
+              top: 80px;
+              left: 0;
+              width: 100%;
+              flex-direction: column;
+              background: white;
+              padding: 24px;
+              gap: 16px;
+              transform: translateY(-100%);
+              opacity: 0;
+              visibility: hidden;
+              transition: all 0.3s ease;
+              align-items: center;
+            }
+
+            .nav-links.active {
+              transform: translateY(0);
+              opacity: 1;
+              visibility: visible;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              align-items: center;
+              text-align: center;
+              padding: 24px 0px 24px;
+            }
+
+            .nav-link {
+              color: #333;
+              width: auto;
+              min-width: 200px;
+              text-align: center;
+              padding: 12px 24px;
+              display: block;
+              font-size: 40px;
+            }
+
+            .cta-button {
+              width: auto;
+              min-width: 200px;
+              text-align: center;
+              background: #007AFF;
+              color: white;
+              display: block;
+              margin: 0 auto;
+              font-size: 40px
+            }
+
+            .mobile-menu-button {
+              display: block;
+            }
+
+
+
+
+
+            .logo {
+              font-size: 32px
+            }
+          }
+
+          @media screen and (max-width: 992px) {
             .nav-links {
               position: fixed;
               top: 80px;

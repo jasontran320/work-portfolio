@@ -34,7 +34,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Flutter Blockchain App",
+    title: "Flutter App",
     description: "Smart wallet with block chain integration using ganash, truffle + solidity to make the smart contracts, web3 to connect the flutter app to the block chain, and gemini ai api for the financial analysis.",
     image: "/assets/images/image3.png",
     tags: ["Dart", "Solidity", "Javascript"],
@@ -96,114 +96,114 @@ export default function Projects() {
                   />
                   <div className="project-overlay">
                     <div className="flex gap-4">
-                    <Popup
-                      modal
-                      lockScroll={true}
-                      nested={false}
-                      className="project-popup"
-                      trigger={
-                        <button
-                          className="btn btn-outline bo3"
-                        >
-                          Read More
-                        </button>
-                      }
-                      overlayStyle={{
-                        background: 'rgba(0, 0, 0, 0.5)',
-                        backdropFilter: 'blur(4px)',
-                        zIndex: 9998
-                      }}
-                      contentStyle={{
-                        padding: 0,
-                        border: 'none',
-                        background: 'transparent',
-                        width: 'auto',
-                        maxWidth: '90%',
-                        maxHeight: '90vh',  
-                        overflowY: 'auto', 
-                        zIndex: 9999,
-                        position: 'fixed',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)'
-                    }}
-                    > 
-                     {(close) => (
-                      <div className="popup-content">
-                        <div className="popup-header">
-                          <h2 className="popup-title">{project.title}</h2>
-                          <button 
-                            onClick={close} 
-                            className="close-button"
+                      <Popup
+                        modal
+                        lockScroll={true}
+                        nested={false}
+                        className="project-popup"
+                        trigger={
+                          <button
+                            className="btn btn-outline bo3"
                           >
-                            <svg 
-                              width="24" 
-                              height="24" 
-                              viewBox="0 0 24 24" 
-                              fill="none" 
-                              stroke="currentColor" 
-                              strokeWidth="2" 
-                              strokeLinecap="round" 
-                              strokeLinejoin="round"
-                            >
-                              <line x1="18" y1="6" x2="6" y2="18"></line>
-                              <line x1="6" y1="6" x2="18" y2="18"></line>
-                            </svg>
+                            Read More
                           </button>
-                        </div>
-                        
-                        <div className="popup-body">
-                          <p className="popup-description">{project.description}</p>
+                        }
+                        overlayStyle={{
+                          background: 'rgba(0, 0, 0, 0.5)',
+                          backdropFilter: 'blur(4px)',
+                          zIndex: 9998
+                        }}
+                        contentStyle={{
+                          padding: 0,
+                          border: 'none',
+                          background: 'transparent',
+                          width: 'auto',
+                          maxWidth: '90vw',
+                          maxHeight: '90vh',  
+                          overflowY: 'auto', 
+                          zIndex: 9999,
+                          position: 'fixed',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%)'
+                      }}
+                      > 
+                      {(close) => (
+                        <div className="popup-content">
+                          <div className="popup-header">
+                            <h2 className="popup-title">{project.title}</h2>
+                            <button 
+                              onClick={close} 
+                              className="close-button"
+                            >
+                              <div className='close-icon'>
+                                <svg 
+                                  viewBox="0 0 24 24" 
+                                  fill="none" 
+                                  stroke="currentColor" 
+                                  strokeWidth="2" 
+                                  strokeLinecap="round" 
+                                  strokeLinejoin="round"
+                                >
+                                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                              </div>
+                            </button>
+                          </div>
                           
-                          <div className="features-section">
-                            <h3 className="features-title">Key Features</h3>
-                            <ul className="features-list">
-                              {project.details.map((detail, index) => (
-                                <li key={index} className="feature-item">
-                                  <span className="arrow">→</span>
-                                  <span className="feature-text">{detail}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
+                          <div className="popup-body">
+                            <p className="popup-description">{project.description}</p>
+                            
+                            <div className="features-section">
+                              <h3 className="features-title">Key Features</h3>
+                              <ul className="features-list">
+                                {project.details.map((detail, index) => (
+                                  <li key={index} className="feature-item">
+                                    <span className="arrow">→</span>
+                                    <span className="feature-text">{detail}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
 
-                          <div className="popup-actions">
-                          {project.liveUrl && (
-                            <a
-                              href={project.liveUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="btn btn-primary"
-                            >
-                                Live Demo
-                            </a>
-                      )}
-                            <a
-                              href={project.githubUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="btn btn-outline"
-                            >
-                              View Source
-                            </a>
+                            <div className="popup-actions">
+                            {project.liveUrl && (
+                              <a
+                                href={project.liveUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-primary bp12"
+                              >
+                                  Live Demo
+                              </a>
+                        )}
+                              <a
+                                href={project.githubUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-outline bo12"
+                              >
+                                View Source
+                              </a>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                     )}       
-                    </Popup>
-                    
-                    <button 
-                      onClick={() => window.open(project.githubUrl, '_blank', 'noopener,noreferrer')}
-                      className="btn btn-outline bo3"
-                    >
-                      Source Code
-                    </button>
+                      )}       
+                      </Popup>
+                      
+                      <button 
+                        onClick={() => window.open(project.githubUrl, '_blank', 'noopener,noreferrer')}
+                        className="btn btn-outline bo3"
+                      >
+                        Source Code
+                      </button>
                     </div>
                   </div>
                 </div>
 
                 <div className="project-paragraph">
-                  <h3 className="text-project">{project.title}</h3>
+                  <h3 className="header-project">{project.title}</h3>
                   <p className="text-project">{project.description}</p>
                   
                   <div className="flex project">
