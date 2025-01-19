@@ -221,12 +221,12 @@ const Navbar = () => {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: max(5vh, 60px);
+            height: max(7vh, 60px);
           }
 
             .menu-icon {
-            width: 64px;
-            height: 64px;
+            width: 80px;
+            height: 80px;
           }
 
             .nav-links {
@@ -287,8 +287,8 @@ const Navbar = () => {
             }
 
             .mobile-menu-button.open .menu-icon {
-                stroke: #4A90E2; /* Or any color you prefer */
-                transform: scale(1.1); /* Optional: slight scale effect */
+                stroke: #4A90E2; 
+                transform: scale(1.1); 
                 transition: all 0.3s ease;
             }
 
@@ -297,7 +297,7 @@ const Navbar = () => {
 
 
             .logo {
-              font-size: 40px
+              font-size: 50px
             }
           }
 
@@ -353,8 +353,8 @@ const Navbar = () => {
             }
 
             .mobile-menu-button.open .menu-icon {
-                stroke: #4A90E2; /* Or any color you prefer */
-                transform: scale(1.05); /* Optional: slight scale effect */
+                stroke: #4A90E2; 
+                transform: scale(1.05); 
                 transition: all 0.3s ease;
             }
 
