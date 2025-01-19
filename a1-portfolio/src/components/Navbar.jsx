@@ -55,7 +55,7 @@ const Navbar = () => {
 
             {/* Mobile Menu Button */}
             <button 
-              className="mobile-menu-button"
+              className={`mobile-menu-button ${isMobileMenuOpen ? 'open' : ''}`}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               <svg 
@@ -93,7 +93,7 @@ const Navbar = () => {
           }
 
           .navbar-container {
-            max-width: 1200px;
+            max-width: 100vw;
             margin: 0 auto;
             padding: 0 24px;
           }
@@ -102,7 +102,7 @@ const Navbar = () => {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 80px;
+            height: 80px
           }
 
           .logo {
@@ -216,6 +216,19 @@ const Navbar = () => {
         }
 
           @media (hover: none) and (max-width: 992px) {
+
+          .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: max(5vh, 60px);
+          }
+
+            .menu-icon {
+            width: 64px;
+            height: 64px;
+          }
+
             .nav-links {
               position: fixed;
               top: 80px;
@@ -233,14 +246,19 @@ const Navbar = () => {
             }
 
             .nav-links.active {
-              transform: translateY(0);
+              position: fixed; /* or absolute, depending on your needs */
+              top: 0;
+              left: 0;
+              right: 0;
+              transform: none; /* Remove translateY if you want it at the very top */
               opacity: 1;
               visibility: visible;
               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
               align-items: center;
               text-align: center;
               padding: 24px 0px 24px;
-            }
+              margin: 0; /* Ensure no margin pushes it down */
+          }
 
             .nav-link {
               color: #333;
@@ -265,6 +283,13 @@ const Navbar = () => {
 
             .mobile-menu-button {
               display: block;
+              z-index: 1001; 
+            }
+
+            .mobile-menu-button.open .menu-icon {
+                stroke: #4A90E2; /* Or any color you prefer */
+                transform: scale(1.1); /* Optional: slight scale effect */
+                transition: all 0.3s ease;
             }
 
 
@@ -272,7 +297,7 @@ const Navbar = () => {
 
 
             .logo {
-              font-size: 32px
+              font-size: 40px
             }
           }
 
@@ -294,14 +319,19 @@ const Navbar = () => {
             }
 
             .nav-links.active {
-              transform: translateY(0);
+              position: fixed; /* or absolute, depending on your needs */
+              top: 0;
+              left: 0;
+              right: 0;
+              transform: none; /* Remove translateY if you want it at the very top */
               opacity: 1;
               visibility: visible;
               box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
               align-items: center;
               text-align: center;
               padding: 24px 0px 24px;
-            }
+              margin: 0; /* Ensure no margin pushes it down */
+          }
 
             .nav-link {
               color: #333;
@@ -322,8 +352,15 @@ const Navbar = () => {
               margin: 0 auto;
             }
 
+            .mobile-menu-button.open .menu-icon {
+                stroke: #4A90E2; /* Or any color you prefer */
+                transform: scale(1.05); /* Optional: slight scale effect */
+                transition: all 0.3s ease;
+            }
+
             .mobile-menu-button {
               display: block;
+              z-index: 1001; 
             }
           }
         `}</style>

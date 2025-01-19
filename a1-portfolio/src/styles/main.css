@@ -926,12 +926,12 @@ body {
 }
 
 .card-title {
-  font-size: 2.5rem;
+  font-size: 3.25rem;
   font-weight: 600;
 }
 
 .card-link {
-  font-size: 2rem;  
+  font-size: 2.5rem;  
   margin-left: 36px;
 }
 
@@ -941,12 +941,12 @@ body {
 }
 
 .copy-button {
-  width: 56px;  
+  width: 100px;  
 }
 
 .copy-icon {
-  width: 40px; 
-  height: 40px;
+  width: 56px; 
+  height: 56px;
 }
 
 .contact-section {
@@ -958,5 +958,10 @@ body {
   padding: 24px;
   display: flex;
   margin-bottom: 19vh;
+  max-width: max(90vw, 300px);   
+  max-height: max(40vh, 300px);   
+  width: 100%;         
+  height: auto;        
+  object-fit: contain; 
 }
 }

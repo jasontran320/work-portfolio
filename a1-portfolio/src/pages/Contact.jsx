@@ -88,7 +88,7 @@ export default function Contact() {
         </div>
 
         <div className='contact-mobile-div'>
-          <img className="contact-mobile-img" src="/assets/images/handshake.jpg" alt="Picture of Handshake" />
+          <img className="contact-mobile-img" src="/assets/images/handshake.png" alt="Picture of Handshake" />
         </div>
       </section>
     </section>
