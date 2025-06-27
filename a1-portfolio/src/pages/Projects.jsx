@@ -47,6 +47,50 @@ const projects = [
       "Had data persitent storage across multiple usages"
     ]
   },
+  {
+    id: 4,
+    title: "WebReg Redesign",
+    description: "Overhaul of the UCI class registration portal WebReg, adding features such a maps service, block management",
+    image: "/assets/images/image6.png",
+    tags: ["HTML", "Javascript", "CSS", "React"],
+    liveUrl: "https://webreg.netlify.app/",
+    githubUrl: "https://github.com/jasontran320/webreg_rework",
+    details: [
+      "Implemented map services through javascript leaflet",
+      "Integrated block management through a shared react context, hooks, and stateful variables",
+      "Built responsive frontend with react",
+      "Had data persitent local storage across the app"
+    ]
+  },
+  {
+    id: 5,
+    title: "Fabflix - Movie Hub Website",
+    description: "AWS + K8 cloud deployed, Apache Tomcat + Mysql full-stack movie hub website",
+    image: "/assets/images/image7.png",
+    tags: ["Javascript", "HTML", "Java"],
+    liveUrl: "https://www.youtube.com/watch?v=AtRqVmQtBBk",
+    githubUrl: "https://github.com/jasontran320/fabflix",
+    details: [
+      "Cloud deployed through AWS using a kubernetes cluster hosted on ec2 machines and s3 buckets",
+      "Displayed loadbalancing, jwt token-based authetication, session handling, and full-stack architecture",
+      "Included a XML parser that adds in new data from external xml files into the Mysql Database",
+      "Includes protected functionality for user in the database, including viewing movies by filter and adding movies and purchasing them"
+    ]
+  },
+  {
+    id: 6,
+    title: "Personal Blog Website",
+    description: "MEAN stack deployment, Mongodb + Node.js + React.js full-stack blog website",
+    image: "/assets/images/image8.png",
+    tags: ["React", "Node.js", "Mongodb"],
+    liveUrl: "https://youtu.be/4g5MFXQI-cI",
+    githubUrl: "https://github.com/jasontran320/rant_website",
+    details: [
+      "Mongodb database integration using Mongoose in Express.js",
+      "Advanced search feature, including stylizerd autocomplete to highlight entries",
+      "Hierarchial visual structure leading to a simple and easy to understand layout"
+    ]
+  },
 ];
 
 export default function Projects() {
