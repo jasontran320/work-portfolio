@@ -70,7 +70,17 @@ export default function Home() {
                 {
                   icon: "🔧",
                   title: "Backend Development",
-                  description: "Building robust server-side applications with Node.js or Django"
+                  description: "Building robust server-side applications with Node.js, Django, or Java"
+                },
+                {
+                  icon: "☁️",
+                  title: "Cloud Deployment",
+                  description: "Deploying large scale services through AWS and GCP"
+                },
+                {
+                  icon: "🍃",
+                  title: "Database Management",
+                  description: "Managing persistent sql and nosql databases with Postgres or Mongodb"
                 }
               ].map((skill, index) => (
                 <div key={index} className="skill-card">

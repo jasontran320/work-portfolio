@@ -91,6 +91,20 @@ const projects = [
       "Hierarchial visual structure leading to a simple and easy to understand layout"
     ]
   },
+  {
+    id: 7,
+    title: "Real Time Collaboration Tier List",
+    description: "Integrated Firebase backend React frontend website",
+    image: "/assets/images/image9.png",
+    tags: ["React", "Firebase"],
+    liveUrl: "https://www.youtube.com/watch?v=2zOCpoi-jj8",
+    githubUrl: "https://github.com/jasontran320/collab_website",
+    details: [
+      "Firebase real time database integration using firebase api in React",
+      "Advanced collaborative features, including tracking collaborator activities and actions",
+      "User authetication and data management through sessions"
+    ]
+  },
 ];
 
 export default function Projects() {
