@@ -31,7 +31,7 @@ const CopyButton = ({ text }) => {
   );
 };
 
-const ContactCard = ({ icon: Icon, title, link, linkText }) => {
+const ContactCard = ({ icon: Icon, title, link, linkText, copyText }) => {
   return (
     <div className="card-wrapper">
       <a
@@ -48,7 +48,7 @@ const ContactCard = ({ icon: Icon, title, link, linkText }) => {
           {linkText}
         </span>
       </a>
-      <CopyButton text={link} />
+      <CopyButton text={copyText} />
     </div>
   );
 };
@@ -59,19 +59,22 @@ export default function Contact() {
       icon: Mail,
       title: "Email",
       link: "https://mail.google.com/mail/?view=cm&fs=1&to=jasontran320@gmail.com",
-      linkText: "jasontran320@gmail.com"
+      linkText: "jasontran320@gmail.com",
+      copyText: "jasontran320@gmail.com"
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/jason-tran-b45348265/",
-      linkText: "/in/jason-tran-b45348265"
+      linkText: "/in/jason-tran-b45348265",
+      copyText: "https://www.linkedin.com/in/jason-tran-b45348265/"
     },
     {
       icon: Github,
       title: "GitHub",
       link: "https://github.com/jasontran320",
-      linkText: "/jasontran320"
+      linkText: "/jasontran320",
+      copyText: "https://github.com/jasontran320"
     }
   ];
 
