@@ -48,7 +48,7 @@ const ContactCard = ({ icon: Icon, title, link, linkText }) => {
           {linkText}
         </span>
       </a>
-      <CopyButton text={linkText} />
+      <CopyButton text={link} />
     </div>
   );
 };

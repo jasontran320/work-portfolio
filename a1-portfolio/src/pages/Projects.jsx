@@ -5,65 +5,6 @@ import { useState } from 'react';
 const projects = [
   {
     id: 1,
-    title: "Texera",
-    description: "A data anaylsis website container featuring docker and google cloud. Features include user authentication, cloud container deployment, community tab, and safe execution.",
-    image: "/assets/images/image2.png",
-    tags: ["Docker", "Python", "GCP", "Javascript"],
-    liveUrl: null,
-    githubUrl: "https://github.com/jasontran320/texera_compose",
-    details: [
-      "Implemented public restful api",
-      "Integrated Docker into a non-docker service",
-      "Built responsive prototype of example user flow",
-      "Developed each individual container with cloud storage persistence"
-    ]
-  },
-  {
-    id: 2,
-    title: "Petr-World",
-    description: "A unity-based platformer featuring UCI's greatest hits! Features include game customization, functional ui, and custom sprites and animations.",
-    image: "/assets/images/image.png",
-    tags: ["ShaderLab", "C#"],
-    liveUrl: "https://creatvename.itch.io/super-petr-world",
-    githubUrl: "https://github.com/jasontran320/GDIM-Project",
-    details: [
-      "Group led project utilizing agile methodology and principles",
-      "Custom sound design, animations, sprites, and physics",
-      "Built responsive gameplay loop with Unity"
-    ]
-  },
-  {
-    id: 3,
-    title: "Flutter App",
-    description: "Smart wallet with block chain integration using ganash, truffle + solidity to make the smart contracts, web3 to connect the flutter app to the block chain, and gemini ai api for the financial analysis.",
-    image: "/assets/images/image3.png",
-    tags: ["Dart", "Solidity", "Javascript"],
-    liveUrl: "https://drive.google.com/file/d/1OpbWRRXYvd0vkPh0-mTkOChdE0E-a_mT/view?usp=sharing",
-    githubUrl: "https://github.com/jasontran320/blockchain_smart_wallet_flutter",
-    details: [
-      "Implemented truffle + solidity smart contract system",
-      "Integrated gemini ai api for financial analysis",
-      "Built responsive frontend with flutter",
-      "Had data persitent storage across multiple usages"
-    ]
-  },
-  {
-    id: 4,
-    title: "WebReg Redesign",
-    description: "Overhaul of the UCI class registration portal WebReg, adding features such a maps service, block management",
-    image: "/assets/images/image6.png",
-    tags: ["HTML", "Javascript", "CSS", "React"],
-    liveUrl: "https://webreg.netlify.app/",
-    githubUrl: "https://github.com/jasontran320/webreg_rework",
-    details: [
-      "Implemented map services through javascript leaflet",
-      "Integrated block management through a shared react context, hooks, and stateful variables",
-      "Built responsive frontend with react",
-      "Had data persitent local storage across the app"
-    ]
-  },
-  {
-    id: 5,
     title: "Fabflix - Movie Hub Website",
     description: "AWS + K8 cloud deployed, Apache Tomcat + Mysql full-stack movie hub website",
     image: "/assets/images/image7.png",
@@ -78,7 +19,36 @@ const projects = [
     ]
   },
   {
-    id: 6,
+    id: 2,
+    title: "WebReg Redesign",
+    description: "Overhaul of the UCI class registration portal WebReg, adding features such a maps service, block management",
+    image: "/assets/images/image6.png",
+    tags: ["HTML", "Javascript", "CSS", "React"],
+    liveUrl: "https://webreg.netlify.app/",
+    githubUrl: "https://github.com/jasontran320/webreg_rework",
+    details: [
+      "Implemented map services through javascript leaflet",
+      "Integrated block management through a shared react context, hooks, and stateful variables",
+      "Built responsive frontend with react",
+      "Had data persitent local storage across the app"
+    ]
+  },
+  {
+    id: 3,
+    title: "Real Time Collaboration Tier List",
+    description: "Integrated Firebase backend React frontend website",
+    image: "/assets/images/image9.png",
+    tags: ["React", "Firebase"],
+    liveUrl: "https://www.youtube.com/watch?v=2zOCpoi-jj8",
+    githubUrl: "https://github.com/jasontran320/collab_website",
+    details: [
+      "Firebase real time database integration using firebase api in React",
+      "Advanced collaborative features, including tracking collaborator activities and actions",
+      "User authetication and data management through sessions"
+    ]
+  },
+  {
+    id: 4,
     title: "Personal Blog Website",
     description: "MEAN stack deployment, Mongodb + Node.js + React.js full-stack blog website",
     image: "/assets/images/image8.png",
@@ -92,20 +62,51 @@ const projects = [
     ]
   },
   {
-    id: 7,
-    title: "Real Time Collaboration Tier List",
-    description: "Integrated Firebase backend React frontend website",
-    image: "/assets/images/image9.png",
-    tags: ["React", "Firebase"],
-    liveUrl: "https://www.youtube.com/watch?v=2zOCpoi-jj8",
-    githubUrl: "https://github.com/jasontran320/collab_website",
+    id: 5,
+    title: "Texera",
+    description: "A data anaylsis website container featuring docker and google cloud. Features include user authentication, cloud container deployment, community tab, and safe execution.",
+    image: "/assets/images/image2.png",
+    tags: ["Docker", "Python", "GCP", "Javascript"],
+    liveUrl: null,
+    githubUrl: "https://github.com/jasontran320/texera_compose",
     details: [
-      "Firebase real time database integration using firebase api in React",
-      "Advanced collaborative features, including tracking collaborator activities and actions",
-      "User authetication and data management through sessions"
+      "Implemented public restful api",
+      "Integrated Docker into a non-docker service",
+      "Built responsive prototype of example user flow",
+      "Developed each individual container with cloud storage persistence"
     ]
   },
+  {
+    id: 6,
+    title: "Petr-World",
+    description: "A unity-based platformer featuring UCI's greatest hits! Features include game customization, functional ui, and custom sprites and animations.",
+    image: "/assets/images/image.png",
+    tags: ["ShaderLab", "C#"],
+    liveUrl: "https://creatvename.itch.io/super-petr-world",
+    githubUrl: "https://github.com/jasontran320/GDIM-Project",
+    details: [
+      "Group led project utilizing agile methodology and principles",
+      "Custom sound design, animations, sprites, and physics",
+      "Built responsive gameplay loop with Unity"
+    ]
+  },
+  {
+    id: 7,
+    title: "Flutter App",
+    description: "Smart wallet with block chain integration using ganash, truffle + solidity to make the smart contracts, web3 to connect the flutter app to the block chain, and gemini ai api for the financial analysis.",
+    image: "/assets/images/image3.png",
+    tags: ["Dart", "Solidity", "Javascript"],
+    liveUrl: "https://drive.google.com/file/d/1OpbWRRXYvd0vkPh0-mTkOChdE0E-a_mT/view?usp=sharing",
+    githubUrl: "https://github.com/jasontran320/blockchain_smart_wallet_flutter",
+    details: [
+      "Implemented truffle + solidity smart contract system",
+      "Integrated gemini ai api for financial analysis",
+      "Built responsive frontend with flutter",
+      "Had data persitent storage across multiple usages"
+    ]
+  }
 ];
+
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
