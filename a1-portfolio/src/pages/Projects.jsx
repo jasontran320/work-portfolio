@@ -39,7 +39,7 @@ const projects = [
     description: "Integrated Firebase backend React frontend website",
     image: "/assets/images/image9.png",
     tags: ["React", "Firebase"],
-    liveUrl: "https://www.youtube.com/watch?v=2zOCpoi-jj8",
+    liveUrl: "https://realtimetierlist.netlify.app/",
     githubUrl: "https://github.com/jasontran320/collab_website",
     details: [
       "Firebase real time database integration using firebase api in React",
@@ -49,11 +49,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "Personal Blog Website",
+    title: "Personal Rants Website",
     description: "MEAN stack deployment, Mongodb + Node.js + React.js full-stack blog website",
     image: "/assets/images/image8.png",
     tags: ["React", "Node.js", "Mongodb"],
-    liveUrl: "https://youtu.be/4g5MFXQI-cI",
+    liveUrl: "https://rants.netlify.app/",
     githubUrl: "https://github.com/jasontran320/rant_website",
     details: [
       "Mongodb database integration using Mongoose in Express.js",
