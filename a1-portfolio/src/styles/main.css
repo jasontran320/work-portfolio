@@ -656,6 +656,7 @@ body {
 .btn-outline {
   border: 2px solid var(--primary);
   color: var(--primary);
+  cursor: pointer;
 }
 
 .bo3 {
