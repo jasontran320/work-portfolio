@@ -9,8 +9,8 @@ const projects = [
     description: "AWS + K8 cloud deployed, Apache Tomcat + Mysql full-stack movie hub website",
     image: "/assets/images/image7.png",
     tags: ["Javascript", "HTML", "Java"],
-    liveUrl: "https://www.youtube.com/watch?v=AtRqVmQtBBk",
-    githubUrl: "https://github.com/jasontran320/fabflix",
+    liveUrl: "https://youtu.be/9ecG6aCccUk",
+    githubUrl: "https://github.com/jasontran320/fabflix/tree/kubernetes",
     details: [
       "Cloud deployed through AWS using a kubernetes cluster hosted on ec2 machines and s3 buckets",
       "Displayed loadbalancing, jwt token-based authetication, session handling, and full-stack architecture",
